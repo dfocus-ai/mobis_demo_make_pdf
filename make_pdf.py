@@ -21,13 +21,13 @@ from make_mermaid_img import *
 def parse_args():
     p = argparse.ArgumentParser()
     g = p.add_mutually_exclusive_group(required=True)
-    g.add_argument("--buttons-json", type=str)
+    g.add_argument("--buttons-dbs", type=str)
     p.add_argument("--pdf-name", type=str, required=True)
     return p.parse_args()
 
 def load_buttons(args):
 
-    data = json.loads(args.buttons_json)
+    data = json.loads(args.buttons_dbs)
     if not isinstance(data, list):
         raise ValueError("buttons는 리스트여야 합니다.")
  
