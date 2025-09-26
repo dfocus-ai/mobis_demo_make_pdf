@@ -8,3 +8,7 @@
 ```
 python make_pdf.py --buttons-dbs '[{"id":1,"name":"주문 조회","backend":"orders"},{"id":2,"name":"주문 생성","backend":"orders"},{"id":3,"name":"회원 조회","backend":"users"},{"id":4,"name":"상품 목록","backend":"products"},{"id":5,"name":"상품 등록","backend":"products"}]' --pdf-name report.pdf
 ```
+
+### 필요 사항
+- 설치 필요 : npm i -g @mermaid-js/mermaid-cli
+- mermaid 실행 시 필요
